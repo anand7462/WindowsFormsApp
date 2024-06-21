@@ -27,8 +27,8 @@ Public Class ViewSubmissionsForm
             txtName.Text = submission.Name
             txtEmail.Text = submission.Email
             txtPhoneNumber.Text = submission.Phone
-            txtGitHubLink.Text = If(String.IsNullOrEmpty(submission.GitHubLink), "https://github.com/anand7462/", submission.GitHubLink)
-            txtStopwatchTime.Text = If(String.IsNullOrEmpty(submission.StopwatchTime), "00:00:12", submission.StopwatchTime)
+            txtGitHubLink.Text = If(String.IsNullOrEmpty(submission.GitHubLink), "NA", submission.GitHubLink)
+            txtStopwatchTime.Text = If(String.IsNullOrEmpty(submission.StopwatchTime), "NA", submission.StopwatchTime)
         Else
             txtName.Text = "No submissions available."
             txtEmail.Text = ""
@@ -54,10 +54,12 @@ Public Class ViewSubmissionsForm
 End Class
 
 Public Class Submission
-    Public Property Id As String ' Ensure you have an Id property that matches your backend
+    Public Property Id As String
     Public Property Name As String
     Public Property Email As String
     Public Property Phone As String
+    <JsonProperty("github_link")>
     Public Property GitHubLink As String
+    <JsonProperty("stopwatch_time")>
     Public Property StopwatchTime As String
 End Class
