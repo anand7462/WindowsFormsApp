@@ -74,7 +74,7 @@ Public Class CreateSubmissionForm
 
     Private Async Function SubmitDataAsync(submission As Dictionary(Of String, String)) As Task(Of Boolean)
         Using client As New HttpClient()
-            client.BaseAddress = New Uri("http://localhost:3000/") ' Adjust the URL if needed
+            client.BaseAddress = New Uri("http://localhost:3000/")
             client.DefaultRequestHeaders.Accept.Clear()
             client.DefaultRequestHeaders.Accept.Add(New Headers.MediaTypeWithQualityHeaderValue("application/json"))
 
@@ -101,4 +101,15 @@ Public Class CreateSubmissionForm
             UpdateStopwatchDisplay()
         End If
     End Sub
+    Protected Overrides Function ProcessCmdKey(ByRef msg As Message, keyData As Keys) As Boolean
+        If keyData = (Keys.Control Or Keys.T) Then
+            btnStartStop.PerformClick()
+            Return True
+        ElseIf keyData = (Keys.Control Or Keys.S) Then
+            btnSubmit.PerformClick()
+            Return True
+        End If
+        Return MyBase.ProcessCmdKey(msg, keyData)
+    End Function
+
 End Class

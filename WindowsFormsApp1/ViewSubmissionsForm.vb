@@ -51,6 +51,17 @@ Public Class ViewSubmissionsForm
             DisplaySubmission()
         End If
     End Sub
+
+    Protected Overrides Function ProcessCmdKey(ByRef msg As Message, keyData As Keys) As Boolean
+        If keyData = (Keys.Control Or Keys.P) Then
+            btnPrevious.PerformClick()
+            Return True
+        ElseIf keyData = (Keys.Control Or Keys.N) Then
+            btnNext.PerformClick()
+            Return True
+        End If
+        Return MyBase.ProcessCmdKey(msg, keyData)
+    End Function
 End Class
 
 Public Class Submission

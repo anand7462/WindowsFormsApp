@@ -86,7 +86,7 @@ Partial Class CreateSubmissionForm
         Me.btnStartStop.Name = "btnStartStop"
         Me.btnStartStop.Size = New System.Drawing.Size(160, 30)
         Me.btnStartStop.TabIndex = 5
-        Me.btnStartStop.Text = "TOGGLE STOPWATCH"
+        Me.btnStartStop.Text = "TOGGLE (CTRL + T)"
         Me.btnStartStop.UseVisualStyleBackColor = False
         '
         'btnSubmit
@@ -98,7 +98,7 @@ Partial Class CreateSubmissionForm
         Me.btnSubmit.Name = "btnSubmit"
         Me.btnSubmit.Size = New System.Drawing.Size(160, 30)
         Me.btnSubmit.TabIndex = 6
-        Me.btnSubmit.Text = "SUBMIT"
+        Me.btnSubmit.Text = "SUBMIT (CTRL + S)"
         Me.btnSubmit.UseVisualStyleBackColor = False
         '
         'formTimer

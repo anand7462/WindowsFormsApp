@@ -62,7 +62,7 @@ Partial Class ViewSubmissionsForm
         Me.txtName.Location = New System.Drawing.Point(150, 17)
         Me.txtName.Name = "txtName"
         Me.txtName.ReadOnly = True
-        Me.txtName.BackColor = System.Drawing.Color.LightGray
+        Me.txtName.BackColor = System.Drawing.Color.WhiteSmoke
         Me.txtName.Size = New System.Drawing.Size(200, 22)
         Me.txtName.TabIndex = 2
         '
@@ -80,7 +80,7 @@ Partial Class ViewSubmissionsForm
         Me.txtEmail.Location = New System.Drawing.Point(150, 57)
         Me.txtEmail.Name = "txtEmail"
         Me.txtEmail.ReadOnly = True
-        Me.txtEmail.BackColor = System.Drawing.Color.LightGray
+        Me.txtEmail.BackColor = System.Drawing.Color.WhiteSmoke
         Me.txtEmail.Size = New System.Drawing.Size(200, 22)
         Me.txtEmail.TabIndex = 4
         '
@@ -98,7 +98,7 @@ Partial Class ViewSubmissionsForm
         Me.txtPhoneNumber.Location = New System.Drawing.Point(150, 97)
         Me.txtPhoneNumber.Name = "txtPhoneNumber"
         Me.txtPhoneNumber.ReadOnly = True
-        Me.txtPhoneNumber.BackColor = System.Drawing.Color.LightGray
+        Me.txtPhoneNumber.BackColor = System.Drawing.Color.WhiteSmoke
         Me.txtPhoneNumber.Size = New System.Drawing.Size(200, 22)
         Me.txtPhoneNumber.TabIndex = 6
         '
@@ -116,7 +116,7 @@ Partial Class ViewSubmissionsForm
         Me.txtGitHubLink.Location = New System.Drawing.Point(150, 137)
         Me.txtGitHubLink.Name = "txtGitHubLink"
         Me.txtGitHubLink.ReadOnly = True
-        Me.txtGitHubLink.BackColor = System.Drawing.Color.LightGray
+        Me.txtGitHubLink.BackColor = System.Drawing.Color.WhiteSmoke
         Me.txtGitHubLink.Size = New System.Drawing.Size(200, 22)
         Me.txtGitHubLink.TabIndex = 8
         '
@@ -134,13 +134,13 @@ Partial Class ViewSubmissionsForm
         Me.txtStopwatchTime.Location = New System.Drawing.Point(150, 177)
         Me.txtStopwatchTime.Name = "txtStopwatchTime"
         Me.txtStopwatchTime.ReadOnly = True
-        Me.txtStopwatchTime.BackColor = System.Drawing.Color.LightGray
+        Me.txtStopwatchTime.BackColor = System.Drawing.Color.WhiteSmoke
         Me.txtStopwatchTime.Size = New System.Drawing.Size(200, 22)
         Me.txtStopwatchTime.TabIndex = 10
         '
         'btnPrevious
         '
-        Me.btnPrevious.BackColor = System.Drawing.Color.Yellow
+        Me.btnPrevious.BackColor = System.Drawing.Color.FromArgb(CType(CType(255, Byte), Integer), CType(CType(255, Byte), Integer), CType(CType(192, Byte), Integer))
         Me.btnPrevious.Location = New System.Drawing.Point(60, 398)
         Me.btnPrevious.Name = "btnPrevious"
         Me.btnPrevious.Size = New System.Drawing.Size(163, 40)

@@ -35,7 +35,7 @@ Partial Class Form1
         Me.btnViewSubmissions.Name = "btnViewSubmissions"
         Me.btnViewSubmissions.Size = New System.Drawing.Size(478, 60)
         Me.btnViewSubmissions.TabIndex = 0
-        Me.btnViewSubmissions.Text = "VIEW SUBMISSIONS"
+        Me.btnViewSubmissions.Text = "VIEW SUBMISSIONS (CTRL + V)"
         Me.btnViewSubmissions.UseVisualStyleBackColor = False
         '
         'btnCreateNewSubmission
@@ -46,7 +46,7 @@ Partial Class Form1
         Me.btnCreateNewSubmission.Name = "btnCreateNewSubmission"
         Me.btnCreateNewSubmission.Size = New System.Drawing.Size(478, 60)
         Me.btnCreateNewSubmission.TabIndex = 1
-        Me.btnCreateNewSubmission.Text = "CREATE NEW SUBMISSION"
+        Me.btnCreateNewSubmission.Text = "CREATE NEW SUBMISSION (CTRL + N)"
         Me.btnCreateNewSubmission.UseVisualStyleBackColor = False
         '
         'lblHeading
